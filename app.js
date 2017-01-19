@@ -85,6 +85,7 @@ function initDBConnection() {
 
 initDBConnection();
 
+app.get('/storage', routes.storage);
 app.get('/', routes.index);
 
 function createResponseData(id, name, value, attachments) {
